@@ -1,0 +1,165 @@
+=======================================================
+  FOLD 1
+=======================================================
+  Train: 80,000   Test: 20,000
+  Training U-AutoRec 
+      epoch  100  val_loss=0.9303
+      early stop @ epoch 101  val_loss=0.9289
+      epoch  100  val_loss=0.9305
+      early stop @ epoch 104  val_loss=0.9283
+      epoch  100  val_loss=0.9300
+      early stop @ epoch 120  val_loss=0.9281
+  Training I-AutoRec 
+      early stop @ epoch 83  val_loss=0.8774
+      epoch  100  val_loss=0.8803
+      early stop @ epoch 113  val_loss=0.8764
+      epoch  100  val_loss=0.8774
+      early stop @ epoch 125  val_loss=0.8764
+  Searching blend weight alpha (U weight)  
+  Baseline I-only              : 41.12%
+  Baseline U-only              : 40.72%
+  Baseline blend(a=0.8)        : 40.88%
+  Using alpha=0.8 for features
+  Building features 
+  Feature dim: 32
+  Training LightGBM 
+    LGB: 44.80%
+  Training XGBoost 
+    XGB: 45.04%
+  Training CatBoost 
+    CAT: 45.00%
+    Fold 1 Ensemble = 45.26%
+
+=======================================================
+  FOLD 2
+=======================================================
+  Train: 80,000   Test: 20,000
+  Training U-AutoRec 
+      epoch  100  val_loss=0.9512
+      early stop @ epoch 165  val_loss=0.9490
+      early stop @ epoch 87  val_loss=0.9495
+      epoch  100  val_loss=0.9498
+      early stop @ epoch 143  val_loss=0.9483
+  Training I-AutoRec 
+      early stop @ epoch 58  val_loss=0.9353
+      epoch  100  val_loss=0.9382
+      early stop @ epoch 134  val_loss=0.9330
+      early stop @ epoch 81  val_loss=0.9339
+  Searching blend weight alpha (U weight)  
+  Baseline I-only              : 41.98%
+  Baseline U-only              : 41.77%
+  Baseline blend(a=0.8)        : 42.00%
+  Using alpha=0.8 for features
+  Building features 
+  Feature dim: 32
+  Training LightGBM 
+    LGB: 45.71%
+  Training XGBoost 
+    XGB: 45.98%
+  Training CatBoost 
+    CAT: 45.69%
+    Fold 2 Ensemble = 46.04%
+
+=======================================================
+  FOLD 3
+=======================================================
+  Train: 80,000   Test: 20,000
+  Training U-AutoRec 
+      early stop @ epoch 100  val_loss=0.9587
+      epoch  100  val_loss=0.9595
+      early stop @ epoch 187  val_loss=0.9574
+      epoch  100  val_loss=0.9603
+      epoch  200  val_loss=0.9603
+      early stop @ epoch 247  val_loss=0.9582
+  Training I-AutoRec 
+      epoch  100  val_loss=0.8988
+      early stop @ epoch 125  val_loss=0.8980
+      early stop @ epoch 75  val_loss=0.8986
+      early stop @ epoch 72  val_loss=0.8988
+  Searching blend weight alpha (U weight)  
+  Baseline I-only              : 41.83%
+  Baseline U-only              : 41.97%
+  Baseline blend(a=0.7)        : 42.20%
+  Using alpha=0.7 for features
+  Building features 
+  Feature dim: 32
+  Training LightGBM 
+    LGB: 45.36%
+  Training XGBoost 
+    XGB: 45.50%
+  Training CatBoost 
+    CAT: 45.59%
+    Fold 3 Ensemble = 45.58%
+
+=======================================================
+  FOLD 4
+=======================================================
+  Train: 80,000   Test: 20,000
+  Training U-AutoRec 
+      epoch  100  val_loss=0.9483
+      early stop @ epoch 147  val_loss=0.9437
+      epoch  100  val_loss=0.9456
+      early stop @ epoch 158  val_loss=0.9445
+      epoch  100  val_loss=0.9460
+      early stop @ epoch 111  val_loss=0.9448
+  Training I-AutoRec 
+      early stop @ epoch 90  val_loss=0.9057
+      early stop @ epoch 95  val_loss=0.9051
+      early stop @ epoch 96  val_loss=0.9055
+  Searching blend weight alpha (U weight)  
+  Baseline I-only              : 42.08%
+  Baseline U-only              : 41.94%
+  Baseline blend(a=0.8)        : 42.16%
+  Using alpha=0.8 for features
+  Building features 
+  Feature dim: 32
+  Training LightGBM 
+    LGB: 45.28%
+  Training XGBoost 
+    XGB: 45.17%
+  Training CatBoost 
+    CAT: 45.29%
+    Fold 4 Ensemble = 45.55%
+
+=======================================================
+  FOLD 5
+=======================================================
+  Train: 80,000   Test: 20,000
+  Training U-AutoRec 
+      epoch  100  val_loss=0.9658
+      early stop @ epoch 101  val_loss=0.9647
+      epoch  100  val_loss=0.9672
+      early stop @ epoch 139  val_loss=0.9643
+      epoch  100  val_loss=0.9662
+      early stop @ epoch 104  val_loss=0.9645
+  Training I-AutoRec 
+      early stop @ epoch 86  val_loss=0.9044
+      epoch  100  val_loss=0.9059
+      early stop @ epoch 110  val_loss=0.9041
+      early stop @ epoch 81  val_loss=0.9050
+  Searching blend weight alpha (U weight)  
+  Baseline I-only              : 41.23%
+  Baseline U-only              : 41.20%
+  Baseline blend(a=1.0)        : 41.20%
+  Using alpha=1.0 for features
+  Building features 
+  Feature dim: 32
+  Training LightGBM 
+    LGB: 44.58%
+  Training XGBoost 
+    XGB: 44.50%
+  Training CatBoost 
+    CAT: 44.46%
+    Fold 5 Ensemble = 44.60%
+
+=======================================================
+  FINAL RESULTS
+=======================================================
+  Fold 1: 45.26%
+  Fold 2: 46.04%
+  Fold 3: 45.58%
+  Fold 4: 45.55%
+  Fold 5: 44.60%
+  ──────────────────────────────────────────
+  Average : 45.40%
+=======================================================
